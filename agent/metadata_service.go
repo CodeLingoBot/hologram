@@ -95,15 +95,13 @@ func (mds *metadataService) listen() {
 	}
 }
 
-/*
-Stops the HTTP server and closes all extant connections.
+/* Stop: Stops the HTTP server and closes all extant connections.
 */
 func (mds *metadataService) Stop() error {
 	return mds.listener.Close()
 }
 
-/*
-Returns the port number currently in use by the HTTP server.
+/* Port returns the port number currently in use by the HTTP server.
 Only really used in tests.
 */
 func (mds *metadataService) Port() int {

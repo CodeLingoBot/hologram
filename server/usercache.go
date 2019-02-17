@@ -72,8 +72,7 @@ type ldapUserCache struct {
 	pubKeysAttr     string
 }
 
-/*
-Update() searches LDAP for the current user set that supports
+/* Update: Update searches LDAP for the current user set that supports
 the necessary properties for Hologram.
 
 TODO: call this at some point during verification failure so that keys that have

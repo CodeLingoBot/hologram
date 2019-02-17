@@ -25,8 +25,7 @@ type syslogSink struct {
 	writer *syslog.Writer
 }
 
-/*
-Return a working logger to Syslog.
+/* NewSyslogSink returns a working logger to Syslog.
 */
 func NewSyslogSink() *syslogSink {
 	rs := &syslogSink{}

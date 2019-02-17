@@ -26,8 +26,7 @@ terminalSink reports log messages at the specified level from Hologram.
 */
 type terminalSink struct{}
 
-/*
-Return a working logger that colourises output to the terminal according to level.
+/* NewColourisedTerminalSink returns a working logger that colourises output to the terminal according to level.
 */
 func NewColourisedTerminalSink() *terminalSink {
 	return &terminalSink{}

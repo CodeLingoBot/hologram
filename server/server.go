@@ -50,8 +50,7 @@ type server struct {
 	pubKeysAttr     string
 }
 
-/*
-ConnectionHandler is the root of the state machine created for
+/* HandleConnection is the root of the state machine created for
 each socket that is opened.
 */
 func (sm *server) HandleConnection(m protocol.MessageReadWriteCloser) {
@@ -78,8 +77,7 @@ func (sm *server) HandleConnection(m protocol.MessageReadWriteCloser) {
 	}
 }
 
-/*
-PingHandler returns the correct response for a ping.
+/* HandlePing returns the correct response for a ping.
 */
 func (sm *server) HandlePing(m protocol.MessageReadWriteCloser, p *protocol.Ping) {
 	log.Debug("Handling a ping request.")

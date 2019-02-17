@@ -21,8 +21,7 @@ import (
 	"github.com/AdRoll/hologram/protocol"
 )
 
-/*
-New returns a properly-initialized client for the calling
+/* NewClient: New returns a properly-initialized client for the calling
 function.
 */
 func NewClient(address string) (retClient protocol.MessageReadWriteCloser, err error) {

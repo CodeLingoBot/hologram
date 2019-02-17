@@ -22,8 +22,7 @@ import (
 	"github.com/AdRoll/hologram/protocol"
 )
 
-/*
-New returns a TLS connection that, if not overriden, has various useful
+/* NewClient: New returns a TLS connection that, if not overriden, has various useful
 options set.
 */
 func NewClient(address string) (retClient protocol.MessageReadWriteCloser, err error) {

@@ -41,8 +41,7 @@ func (m *logMux) Add(s Sink) {
 	m.sinks = append(m.sinks, s)
 }
 
-/*
-Fan-out messages to each sink.
+/* Info: Fan-out messages to each sink.
 */
 func (m *logMux) Info(message string, v ...interface{}) {
 	actualMessage := fmt.Sprintf(message, v...)
